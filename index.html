@@ -6,25 +6,25 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Advice generator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    Advice #<!-- Advice ID goes here -->
-
-    "<!-- Advice text goes here -->"
+    <section class="card-container">
+      <div class="card">
+        <div class="text">
+          <h4>ADVICE #<span id="adviceID"></span></h4>
+          <p id="advice"></p>
+        </div>
+        <div class="divider"></div>
+        <button class="dice"></button>
+      </div>
+    </section>
 
     <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Miguel Gonzalez</a>.</div>
+    <script src="script.js"></script>
   </body>
 </html>

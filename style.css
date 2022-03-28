@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --back_body_color: #202632;
+  --back_card_color: #313a49;
+  --body_color: #cfe4e9;
+  --acent_color: #53ffab;
+  --body-font: "Manrope", sans-serif;
+}
+
+body {
+  background-color: var(--back_body_color);
+  color: var(--body_color);
+  font-family: var(--body-font);
+}
+
+.card-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--back_card_color);
+  width: 30%;
+  aspect-ratio: 3/2;
+  border-radius: 2rem;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.text {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text h4 {
+  color: var(--acent_color);
+  letter-spacing: 0.2rem;
+  font-weight: 100;
+}
+
+.text p {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.divider {
+  width: 100%;
+  height: 10%;
+  background-image: url(./images/pattern-divider-desktop.svg);
+  background-size: 80%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.dice {
+  background-color: var(--acent_color);
+  width: 4rem;
+  aspect-ratio: 1;
+  background-image: url(./images/icon-dice.svg);
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  bottom: -2rem;
+  right: calc(50% - 2rem);
+  cursor: pointer;
+}
+
+.dice:hover {
+  filter: drop-shadow(0 0 15px #53ffab);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
